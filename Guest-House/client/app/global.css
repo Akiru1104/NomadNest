@@ -8,6 +8,36 @@
   scrollbar-width: none;
 }
 
+@keyframes gallery-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes gallery-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.gallery-track {
+  animation: gallery-scroll 90s linear infinite;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+.gallery-track-reverse {
+  animation: gallery-scroll-reverse 100s linear infinite;
+  animation-play-state: running;
+  will-change: transform;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

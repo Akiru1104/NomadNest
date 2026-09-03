@@ -3,6 +3,12 @@
 import { FormEvent, useMemo, useState } from "react";
 
 const rooms = ["Double Room 1", "Double Room 2", "Deluxe Room", "Budget Room"];
+const roomPrices: Record<string, string> = {
+  "Double Room 1": "$39 / night",
+  "Double Room 2": "$39 / night",
+  "Deluxe Room": "$31 / night",
+  "Budget Room": "$23 / night",
+};
 
 type SubmitState = "idle" | "sending" | "success" | "error";
 
@@ -110,6 +116,10 @@ export const MainFour = () => {
                 <p className="mt-1 font-semibold">
                   {nights ? `${nights} night${nights > 1 ? "s" : ""}` : "—"}
                 </p>
+              </div>
+              <div className="col-span-2 border-t border-[#E8DED2] pt-4">
+                <p className="text-[#8B8177]">Price per night</p>
+                <p className="mt-1 font-semibold">{roomPrices[room]}</p>
               </div>
             </div>
           </div>

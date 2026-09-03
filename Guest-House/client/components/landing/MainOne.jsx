@@ -6,7 +6,7 @@ export const MainOne = () => {
       {/* Small-screen background */}
       <div className="absolute inset-0 md:hidden">
         <img
-          src="/test1.png"
+          src="/Share15.jpg"
           alt="NomadNest Guest House"
           className="w-full h-full object-cover"
         />
@@ -73,7 +73,7 @@ export const MainOne = () => {
 
           <div className="relative w-full h-full bg-white rounded-3xl overflow-hidden border border-white shadow-[0_25px_60px_rgba(0,0,0,0.18)]">
             <img
-              src="/test1.png"
+              src="/Share15.jpg"
               alt="NomadNest Guest House Room"
               className="w-full h-full object-cover transition-all duration-700 scale-105 hover:scale-100"
             />
