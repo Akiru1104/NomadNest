@@ -34,6 +34,8 @@ const facilities = [
   ["04", "Warm hospitality", "Local recommendations and thoughtful help whenever you need it."],
 ];
 
+const sharedImages = ["/Share1.jpg", "/Share3.jpg", "/Share5.jpg"];
+
 export const MainThree = () => {
   return (
     <section id="gallery" className="w-full bg-white py-16 sm:py-24">
@@ -83,6 +85,17 @@ export const MainThree = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mt-16 grid gap-4 sm:grid-cols-3 sm:gap-5">
+          {sharedImages.map((image, index) => (
+            <img
+              key={image}
+              src={image}
+              alt={`NomadNest shared space ${index + 1}`}
+              className={`h-56 w-full object-cover ${index === 1 ? "sm:mt-8" : ""}`}
+            />
+          ))}
         </div>
       </div>
     </section>
