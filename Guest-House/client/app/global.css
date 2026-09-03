@@ -132,8 +132,7 @@
   }
   html {
     @apply font-sans;
-    /* Зөөлөн гүйлгэх болон Header-ийн зайг тооцох */
     scroll-behavior: smooth;
-    scroll-padding-top: 30rem;
+    scroll-padding-top: 7rem;
   }
 }

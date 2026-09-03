@@ -23,35 +23,35 @@ export const MainTwo = () => {
   return (
     <section
       id="about"
-      className="w-full bg-[#F8F5EF] flex items-center justify-center px-6 py-24"
+      className="flex w-full items-center justify-center bg-[#F8F5EF] px-4 py-16 sm:px-6 sm:py-24"
     >
       <div className="w-full max-w-7xl">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <p className="text-4xl md:text-5xl font-bold text-[#1F2937]">
+        <div className="mb-10 text-center sm:mb-16">
+          <p className="text-3xl font-bold text-[#1F2937] sm:text-4xl md:text-5xl">
             Why Stay With Us?
           </p>
 
-          <p className="text-[#6B7280] text-lg max-w-2xl mx-auto mt-5">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6B7280] sm:mt-5 sm:text-lg sm:leading-normal">
             Everything you need for a comfortable, relaxing, and memorable stay
             in downtown Ulaanbaatar.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-3 md:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="rounded-2xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-2xl sm:rounded-3xl sm:p-10"
             >
-              <div className="text-5xl mb-6">{feature.icon}</div>
+              <div className="mb-4 text-4xl sm:mb-6 sm:text-5xl">{feature.icon}</div>
 
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="mb-3 text-xl font-bold text-[#1F2937] sm:mb-4 sm:text-2xl">
                 {feature.title}
               </h3>
 
-              <p className="text-[#6B7280] leading-7">
+              <p className="text-sm leading-7 text-[#6B7280] sm:text-base">
                 {feature.description}
               </p>
             </div>

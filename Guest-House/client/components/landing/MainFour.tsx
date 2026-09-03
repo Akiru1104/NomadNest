@@ -2,7 +2,7 @@
 
 import { FormEvent, useMemo, useState } from "react";
 
-const rooms = ["Double Room", "Budget Twin Room", "Deluxe Single Room"];
+const rooms = ["Double Room 1", "Double Room 2", "Deluxe Room", "Budget Room"];
 
 type SubmitState = "idle" | "sending" | "success" | "error";
 
